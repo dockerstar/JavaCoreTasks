@@ -1,0 +1,10 @@
+package school.sorokin.javacore.OOP;
+
+public class Car {
+    String model;
+    int year;
+
+    void Start() {
+        System.out.println("Car %s %s year going".formatted(model, year));
+    }
+}
