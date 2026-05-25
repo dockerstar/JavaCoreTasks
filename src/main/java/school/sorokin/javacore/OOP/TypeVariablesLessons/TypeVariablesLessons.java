@@ -1,7 +1,5 @@
 package school.sorokin.javacore.OOP.TypeVariablesLessons;
 
-import school.sorokin.javacore.OOP.Car;
-
 public class TypeVariablesLessons {
     public static void main(String[] args) {
         int value = 10;

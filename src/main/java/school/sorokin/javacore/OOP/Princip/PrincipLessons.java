@@ -1,4 +1,4 @@
-package school.sorokin.javacore.OOP;
+package school.sorokin.javacore.OOP.Princip;
 
 public class PrincipLessons {
     public static void main(String[] args) {
