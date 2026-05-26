@@ -5,7 +5,7 @@ public class ExceptionLEssons {
        try {
            int a = 4;
            int b = 0;
-           System.out.println(a / b);
+//           System.out.println(a / b);
            int[] arr = {1 ,2 ,3};
            System.out.println(arr[3]);
        } catch (ArithmeticException e) {
