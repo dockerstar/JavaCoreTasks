@@ -1,10 +1,6 @@
-package school.sorokin.javacore.SOLID;
+package school.sorokin.javacore.OOP.SOLID;
 
-import school.sorokin.javacore.SOLID.Noti.PushNoti;
-import school.sorokin.javacore.SOLID.Noti.SendMessage;
-
-import java.util.HashMap;
-import java.util.Map;
+import school.sorokin.javacore.OOP.SOLID.Noti.PushNoti;
 
 public class TicketService {
     private final TicketRepository ticketRepository = new TicketRepository();

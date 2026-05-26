@@ -1,4 +1,4 @@
-package school.sorokin.javacore.SOLID;
+package school.sorokin.javacore.OOP.SOLID;
 
 public class Ticket {
     private String title;
