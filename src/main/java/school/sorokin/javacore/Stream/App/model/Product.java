@@ -3,7 +3,7 @@ package school.sorokin.javacore.Stream.App.model;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Product {
+public class Product{
     private final Long id;
     private final String name;
     private final String category;
@@ -53,4 +53,7 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
+
+
 }
