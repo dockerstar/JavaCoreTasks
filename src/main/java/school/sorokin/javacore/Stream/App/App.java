@@ -180,8 +180,51 @@ public class App {
         System.out.println(minBook);
 
         //11
+        Map<Long, Integer> map1 = orderList.stream()
+                .collect(Collectors.toMap(
+                        Order::getId,
+                        order -> order.getProducts().size()
+                ));
+        System.out.println(map1);
 
+        //12
+        Map<Customer, List<Order>> map2 = customerList.stream()
+                .collect(Collectors.toMap(
+                        customer -> customer,
+                        customer -> customer.getOrders().stream().toList()
+                ));
+        System.out.println(map2);
 
+        //13
+        Map<Long, BigDecimal> map3 = orderList.stream()
+                .collect(Collectors.toMap(
+                        order -> order.getId(),
+                        order -> {
+                            Set<Product> productList1 = order.getProducts();
+                            BigDecimal sumPr = productList1.stream()
+                                    .map(product -> product.getPrice())
+                                    .reduce((a,b)->a.add(b))
+                                    .get();
+                            return sumPr;
+                        }
+                ));
+        System.out.println(map3);
 
+        //14
+        Map<String, List<String>> map4 = productList.stream()
+                .collect(Collectors.groupingBy(
+                        Product::getCategory,
+                        Collectors.mapping(Product::getName, Collectors.toList())
+                        )
+                );
+        System.out.println(map4);
+
+        //15
+        Map<String, Optional<Product>> map5 = productList.stream()
+                .collect(Collectors.groupingBy(
+                        Product::getCategory,
+                        Collectors.maxBy(Comparator.comparing(Product::getPrice))
+                ));
+        System.out.println(map5);
     }
 }
