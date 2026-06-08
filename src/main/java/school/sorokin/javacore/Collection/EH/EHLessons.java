@@ -3,7 +3,6 @@ package school.sorokin.javacore.Collection.EH;
 import school.sorokin.javacore.Collection.EH.model.User;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class EHLessons {
     public static void main(String[] args) {

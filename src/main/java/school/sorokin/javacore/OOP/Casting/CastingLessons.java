@@ -1,7 +1,5 @@
 package school.sorokin.javacore.OOP.Casting;
 
-import javax.sound.midi.Soundbank;
-
 public class CastingLessons {
     public static void main(String[] args) {
         int a = 22201;
